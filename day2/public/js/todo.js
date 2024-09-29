@@ -24,7 +24,7 @@ function addTODO() {
     todo.map((data, idx) => {
         console.log(data, "ini index", idx);
 
-        document.getElementById("todo-list").innerHTML = template(data.task, data.status, idx);
+        document.getElementById("todo-list").innerHTML += template(data.task, data.status, idx);
     })
 };
 
