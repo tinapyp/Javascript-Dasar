@@ -3,7 +3,7 @@ body {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 60px 1fr;
     grid-template-areas: 
         "sidebar header"
         "sidebar main"
@@ -12,7 +12,7 @@ body {
 
 .header {
     grid-area: header;
-    background-color: aqua;
+    background-color: #fff;
     padding: 10px;
     height: 60px;
 }
@@ -20,10 +20,56 @@ body {
 .sidebar {
     grid-area: sidebar;
     height: 100vh;
-    background-color: aliceblue;
+    background-color: #060036;
 }
 
 .main {
     grid-area: main;
-    background-color: black;
+    background-color: #f7f7f7;
+    padding: 3rem;
+}
+
+.grid {
+    padding: grid;;
+}
+
+.grid-col-12 {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    border-radius: 15px;
+    height: 150px;
+    background-color: blue;
+    padding: 16px;
+}
+.bg-card1{
+    background: linear-gradient(180deg, hsla(162, 100%, 18%, 1), hsla(162, 100%, 25%, 1));
+}
+.bg-card2{
+    background: linear-gradient(180deg, hsla(247, 100%, 16%, 1), hsla(247, 100%, 26%, 1));
+}
+.bg-card3{
+    background: linear-gradient(180deg, #41083B 0%, #710D67 100%);
+}
+
+.icon-white{
+    font-size: 32px !important;
+    color: white;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    color:  white;
+}
+
+.card-content{
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
 }
