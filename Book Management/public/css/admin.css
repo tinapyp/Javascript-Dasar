@@ -1,0 +1,29 @@
+body { 
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main"
+    ;
+}
+
+.header {
+    grid-area: header;
+    background-color: aqua;
+    padding: 10px;
+    height: 60px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.main {
+    grid-area: main;
+    background-color: black;
+}
